@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/spacing_mlarge" >
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/button_facebook_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:visibility="invisible"
+                facebook:com_facebook_login_text="@string/action_signup_with_facebook"
+                facebook:com_facebook_logout_text="@string/action_signup_with_facebook" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/google_sign_in_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="@string/action_login_with_google"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/facebook_auth_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorCardBackground"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/oauth_type_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_authorization_via_facebook"
+                    android:textColor="@color/colorSubTitle" />
+
+                <TextView
+                    android:id="@+id/button_regular_auth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/action_regular_signup"
+                    android:textColor="@color/colorAccent" />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/placeholder_login"
+                android:ems="10"
+                android:layout_marginTop="10dp"
+                android:maxLength="24"
+                android:id="@+id/username_edit" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/placeholder_fullname"
+                android:ems="10"
+                android:layout_marginTop="10dp"
+                android:maxLength="24"
+                android:id="@+id/fullname_edit" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:hint="@string/placeholder_password"
+                android:id="@+id/password_edit"
+                android:layout_marginTop="10dp"
+                android:maxLength="20"
+                android:layout_gravity="center_horizontal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="@string/placeholder_email"
+                android:ems="10"
+                android:maxLength="64"
+                android:layout_marginTop="10dp"
+                android:id="@+id/email_edit" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/label_signup_invite" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/label_user_id"
+                android:ems="10"
+                android:maxLength="6"
+                android:layout_marginTop="10dp"
+                android:id="@+id/referrer_edit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_register_terms"
+                android:textColor="@color/colorSubTitle"
+                android:id="@+id/textView1"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/button_terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signup_label_terms_and_policies"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/button_continue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/action_continue"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_primary"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

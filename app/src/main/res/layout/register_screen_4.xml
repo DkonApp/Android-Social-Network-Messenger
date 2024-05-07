@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/register_screen_4">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_screen_4_title"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:text="@string/register_screen_4_subtitle"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="172dp"
+            android:layout_height="172dp"
+            android:layout_margin="@dimen/spacing_middle"
+            app:srcCompat="@drawable/ic_nearby"/>
+
+        <Button
+            android:id="@+id/button_grant_location_permission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/button_white"
+            android:stateListAnimator="@null"
+            android:text="@string/action_grant_access"
+            android:textColor="@color/dark_blue"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</RelativeLayout>

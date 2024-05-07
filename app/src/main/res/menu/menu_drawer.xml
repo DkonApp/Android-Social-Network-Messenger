@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_action_profile"
+            android:title="@string/page_1" />
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_action_gallery"
+            android:title="@string/page_11" />
+
+        <item
+            android:id="@+id/nav_feed"
+            android:icon="@drawable/ic_action_feed"
+            android:title="@string/page_2" />
+
+        <item
+            android:id="@+id/nav_stream"
+            android:icon="@drawable/ic_action_stream"
+            android:title="@string/page_3" />
+
+        <item
+            android:id="@+id/nav_popular"
+            android:icon="@drawable/ic_action_popular"
+            android:title="@string/page_4" />
+
+        <item
+            android:id="@+id/nav_friends"
+            android:icon="@drawable/ic_action_friends"
+            android:title="@string/page_5"
+            app:actionLayout="@layout/menu_counter_plain" />
+
+
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/ic_action_notifications"
+            android:title="@string/page_6"
+            app:actionLayout="@layout/menu_counter_plain" />
+
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@drawable/ic_action_messages"
+            android:title="@string/page_7"
+            app:actionLayout="@layout/menu_counter_plain" />
+
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/ic_action_favorites"
+            android:title="@string/page_8" />
+
+        <item
+            android:id="@+id/nav_guests"
+            android:icon="@drawable/ic_action_guests"
+            android:title="@string/page_12"
+            app:actionLayout="@layout/menu_counter_plain" />
+
+        <item
+            android:id="@+id/nav_groups"
+            android:icon="@drawable/ic_action_groups"
+            android:title="@string/page_9" />
+
+        <item
+            android:id="@+id/nav_upgrades"
+            android:icon="@drawable/ic_action_upgrade"
+            android:title="@string/page_14" />
+
+        <item
+            android:id="@+id/nav_nearby"
+            android:icon="@drawable/ic_action_nearby"
+            android:title="@string/page_15" />
+
+        <item
+            android:id="@+id/nav_market"
+            android:icon="@drawable/ic_action_market"
+            android:title="@string/page_16" />
+
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_action_search"
+            android:title="@string/page_10" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_action_settings"
+            android:title="@string/title_activity_settings" />
+
+    </group>
+
+</menu>

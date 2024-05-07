@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_header_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:id="@+id/userCover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/profile_default_cover" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="16dp">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/profile_default_photo"
+                android:id="@+id/userPhoto"
+                app:civ_border="true"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="1dp"
+                app:civ_shadow="false"
+                app:civ_shadow_radius="0"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/verified"
+                android:layout_width="@dimen/spacing_mxlarge"
+                android:layout_height="@dimen/spacing_mxlarge"
+                android:layout_marginTop="-32dp"
+                android:layout_marginLeft="62dp"
+                android:src="@drawable/ic_verified"
+                app:civ_border="true"
+                app:civ_border_color="@color/gray_bg"
+                app:civ_border_width="1dp"
+                app:civ_shadow="false"
+                app:civ_shadow_radius="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User fullname"
+                android:id="@+id/userFullname"
+                android:shadowColor="@color/black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:layout_above="@+id/userUsername"
+                android:layout_toRightOf="@+id/userPhoto"
+                android:layout_toEndOf="@+id/userPhoto"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:layout_marginRight="16dp" />
+
+            <TextView
+                android:id="@+id/userUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/userPhoto"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toEndOf="@+id/userPhoto"
+                android:layout_toRightOf="@+id/userPhoto"
+                android:shadowColor="@color/black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:singleLine="true"
+                android:text="/@username"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

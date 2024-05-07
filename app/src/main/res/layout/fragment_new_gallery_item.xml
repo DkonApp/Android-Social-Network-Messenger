@@ -1,0 +1,280 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/colorPageBackground" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:orientation="horizontal"
+                android:background="@color/colorDialogFooterBackground"
+                android:padding="@dimen/spacing_large">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/photo_image"
+                    android:layout_width="@dimen/spacing_xxlarge"
+                    android:layout_height="@dimen/spacing_xxlarge"
+                    android:src="@drawable/profile_default_photo"
+                    app:civ_shadow="false"
+                    app:civ_shadow_radius="0"
+                    app:civ_border="false" />
+
+                <View
+                    android:layout_width="@dimen/spacing_large"
+                    android:layout_height="0dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/fullname_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Donald Trump"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/colorTitle"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorSeparator"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/nested_view" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <github.ankushsachdeva.emojicon.EmojiconEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="150dp"
+                        android:id="@+id/postEdit"
+                        android:hint="@string/placeholder_post"
+                        android:scrollbarStyle="outsideInset"
+                        android:scrollbars="vertical"
+                        android:overScrollMode="never"
+                        android:gravity="left|top"
+                        android:background="@null"
+                        android:maxLength="1000"
+                        android:textSize="16dp"
+                        emojicon:emojiconSize="24dp"
+                        android:padding="7dp" />
+
+                    <LinearLayout
+                        android:id="@+id/media_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey_10"/>
+
+                        <RelativeLayout
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/img_dim"
+                            android:layout_margin="@dimen/spacing_small">
+
+                            <com.balysv.materialripple.MaterialRippleLayout
+                                android:id="@+id/parent"
+                                style="@style/RippleStyleBlack"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:id="@+id/thumbnail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:foreground="@color/overlay_dark_10"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/img_loading" />
+
+                                    <ProgressBar
+                                        android:id="@+id/progressBar"
+                                        style="?android:attr/progressBarStyle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true" />
+
+                                    <ImageView
+                                        android:id="@+id/play_icon"
+                                        android:layout_width="48dp"
+                                        android:layout_height="48dp"
+                                        android:src="@drawable/video_play"
+                                        android:layout_centerVertical="true"
+                                        android:layout_centerHorizontal="true" />
+
+                                </RelativeLayout>
+
+                            </com.balysv.materialripple.MaterialRippleLayout>
+
+                            <LinearLayout
+                                android:descendantFocusability="blocksDescendants"
+                                android:id="@+id/delete"
+                                android:clickable="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:background="@color/overlay_dark_40"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical"
+                                android:padding="@dimen/spacing_xmedium">
+
+                                <ImageView
+                                    android:id="@+id/delete_image"
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginRight="@dimen/spacing_small"
+                                    android:scaleType="centerCrop"
+                                    android:tint="@color/white"
+                                    android:background="@drawable/ic_clear" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey_10"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorDialogFooterBackground" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorSeparator"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:id="@+id/emojiBtn"
+                    android:background="@drawable/ic_emoji"
+                    android:tint="@color/colorIconTint"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="6dp" />
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    style="@style/RippleStyleBlack"
+                    android:id="@+id/open_bottom_sheet_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/spacing_middle"
+                    android:paddingRight="@dimen/spacing_middle"
+                    app:mrl_rippleDuration="0"
+                    app:mrl_rippleFadeDuration="0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="44dp"
+                                android:layout_height="44dp"
+                                android:id="@+id/img_img"
+                                android:background="@drawable/ic_gallery"
+                                android:scaleType="centerCrop" />
+
+                            <ImageView
+                                android:layout_width="44dp"
+                                android:layout_height="44dp"
+                                android:layout_marginRight="@dimen/spacing_medium"
+                                android:layout_marginEnd="@dimen/spacing_medium"
+                                android:id="@+id/video_img"
+                                android:background="@drawable/video_play"
+                                android:scaleType="centerCrop" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--bottom sheet container-->
+    <FrameLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/bottom_sheet_behavior" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

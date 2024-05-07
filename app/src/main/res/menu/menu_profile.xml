@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="uk.co.ifsoft.android.ProfileActivity">
+
+    <item
+        android:id="@+id/action_new_gift"
+        android:icon="@drawable/ic_action_new_gift"
+        app:showAsAction="always"
+        android:title="@string/action_gift" />
+</menu>

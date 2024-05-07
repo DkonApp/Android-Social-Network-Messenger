@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#242627</color>
+    <color name="colorPrimaryDark">#17191A</color>
+    <color name="colorAccent">#8AB3F9</color>
+    <color name="colorRipple">#4E5673</color>
+
+    //
+
+    <color name="colorLikeIconTint">#606770</color>
+    <color name="colorLikeActiveIconTint">#EB4846</color>
+
+    //
+
+    <color name="tabBarBackground">#242627</color>
+    <color name="tabBarIconTint">#5D5F61</color>
+    <color name="tabBarIconTintActive">#C0C0C1</color>
+
+    //
+
+    <color name="colorDialogTitleText">#ffffff</color>
+    <color name="colorDialogTitleBackground">#2B2B2B</color>
+    <color name="colorDialogFooterBackground">#2B2B2B</color>
+
+    //
+
+    <color name="colorGroupBubbleBackground">#424242</color>
+    <color name="colorGroupBubbleStroke">#3A3C3D</color>
+    <color name="colorGroupBubblePlayIconTint">#7EA4E4</color>
+
+    //
+
+    <color name="colorSponsored">#8AB3F9</color>
+    <color name="colorSeparator">#A8A7AA</color>
+    <color name="colorDisabled">#ABABAB</color>
+    <color name="colorTextDisabled">#ECECEC</color>
+    <color name="colorBadgeBackground">#C24537</color>
+    <color name="colorCounterBackground">#E32F2D</color>
+    <color name="colorCounterText">#ffffff</color>
+
+    //
+
+    <color name="colorChatCardBackground">#424242</color>
+    <color name="colorChatMyCardBackground">#424242</color>
+
+    //
+
+    <color name="colorTitle">#E4E4E8</color>
+    <color name="colorSubTitle">#E1E2E6</color>
+    <color name="colorPageBackground">#303030</color>
+    <color name="colorLightBackground">#3A3C3D</color>
+    <color name="colorCardBackground">#424242</color>
+    <color name="colorIconTint">#A1A3A5</color>
+    <color name="colorTopBarIconTint">#ffffff</color>
+    <color name="colorTopBarBackground">#3A3C3D</color>
+
+    <color name="colorGreyButtonDefault">#606164</color>
+    <color name="colorGreyButtonPressed">#515255</color>
+
+    <color name="colorWhiteButtonDefault">#515255</color>
+    <color name="colorWhiteButtonPressed">#515255</color>
+
+</resources>

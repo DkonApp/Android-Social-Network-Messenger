@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/register_screen_2">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_screen_2_title"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="@string/register_screen_2_subtitle"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/photoContainer"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/photo_image"
+                android:layout_width="132dp"
+                android:layout_height="132dp"
+                android:layout_marginTop="@dimen/spacing_middle"
+                android:src="@drawable/profile_default_photo"
+                app:civ_border="true"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="3dp"
+                app:civ_shadow="false"
+                app:civ_shadow_radius="0" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_choose_photo"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/loginBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/button_white"
+            android:stateListAnimator="@null"
+            android:text="@string/action_choose_photo"
+            android:textColor="@color/dark_blue"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

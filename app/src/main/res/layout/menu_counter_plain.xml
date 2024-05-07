@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="@dimen/spacing_mxlarge"
+        android:layout_height="@dimen/spacing_mxlarge"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/grey_40" />
+
+</LinearLayout>

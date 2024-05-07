@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.balysv.materialripple.MaterialRippleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/tools"
+    style="@style/RippleStyleBlack"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/spacing_large"
+        android:paddingTop="@dimen/spacing_large">
+
+        <View
+            android:layout_width="@dimen/spacing_large"
+            android:layout_height="0dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/image_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/image"
+                    android:layout_width="@dimen/spacing_xxlarge"
+                    android:layout_height="@dimen/spacing_xxlarge"
+                    android:src="@drawable/profile_default_photo"
+                    app:civ_border="true"
+                    app:civ_border_color="@color/gray_bg"
+                    app:civ_border_width="1dp"
+                    app:civ_shadow="false"
+                    app:civ_shadow_radius="0" />
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/online"
+                    android:layout_width="@dimen/spacing_smlarge"
+                    android:layout_height="@dimen/spacing_smlarge"
+                    android:layout_marginLeft="32dp"
+                    android:src="@drawable/ic_online"
+                    app:civ_border="true"
+                    app:civ_border_color="@color/gray_bg"
+                    app:civ_border_width="1dp"
+                    app:civ_shadow="false"
+                    app:civ_shadow_radius="0" />
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/verified"
+                    android:layout_width="@dimen/spacing_smlarge"
+                    android:layout_height="@dimen/spacing_smlarge"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:src="@drawable/ic_verified"
+                    app:civ_border="true"
+                    app:civ_border_color="@color/gray_bg"
+                    app:civ_border_width="1dp"
+                    app:civ_shadow="false"
+                    app:civ_shadow_radius="0" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/spacing_smlarge"
+            android:layout_height="0dp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/app_name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/colorTitle"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/app_copyright"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/colorSubTitle"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp">
+
+                    <github.ankushsachdeva.emojicon.EmojiconTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"
+                        android:id="@+id/message"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorSubTitle"
+                        emojicon:emojiconSize="24dp"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/count"
+                        android:background="@drawable/counter_bg"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="00:00"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/colorSubTitle"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/spacing_large"
+            android:layout_height="0dp" />
+    </LinearLayout>
+
+</com.balysv.materialripple.MaterialRippleLayout>

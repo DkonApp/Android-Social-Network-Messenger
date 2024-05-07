@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <!-- Thumbnail Image -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:id="@+id/groupPhoto"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/profile_default_photo"
+                app:civ_border="true"
+                app:civ_border_color="@color/gray_bg"
+                app:civ_border_width="1dp"
+                app:civ_shadow="false"
+                app:civ_shadow_radius="0" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/groupFullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Search User Fullname"
+                android:textSize="17dp"
+                android:drawableRight="@drawable/profile_verify_icon"
+                android:drawablePadding="5dp"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                android:textColor="@color/colorTitle"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical|center|center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/groupFollowers"
+                android:textSize="14dp"
+                android:textStyle="normal"
+                android:textColor="@color/colorSubTitle"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif-light"
+                android:singleLine="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Person Full name -->
+
+    <!-- Status -->
+
+</RelativeLayout>

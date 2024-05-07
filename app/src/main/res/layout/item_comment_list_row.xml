@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:emojicon="http://schemas.android.com/tools"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="@dimen/spacing_medium"
+        app:cardElevation="@dimen/spacing_xsmall"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/spacing_middle"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingTop="@dimen/spacing_middle">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/itemAuthorPhoto"
+                    android:layout_width="@dimen/spacing_xxlarge"
+                    android:layout_height="@dimen/spacing_xxlarge"
+                    android:src="@drawable/profile_default_photo"
+                    app:civ_border="true"
+                    app:civ_border_color="@color/gray_bg"
+                    app:civ_border_width="1dp"
+                    app:civ_shadow="false"
+                    app:civ_shadow_radius="0" />
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/itemAuthorIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="-24dp"
+                    android:src="@drawable/ic_verified"
+                    app:civ_border="true"
+                    app:civ_border_color="@color/gray_bg"
+                    app:civ_border_width="1dp"
+                    app:civ_shadow="false"
+                    app:civ_shadow_radius="0" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/spacing_middle"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Item Author"
+                            android:id="@+id/itemAuthor"
+                            android:fontFamily="sans-serif-light"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorTitle"
+                            android:textSize="16dp"
+                            android:maxLines="1"
+                            android:ellipsize="end" />
+
+                        <ImageView
+
+                            android:layout_width="15px"
+                            android:layout_height="15px"
+                            android:src="@drawable/ic_online"
+                            android:id="@+id/itemAuthorOnlineIcon"
+                            android:layout_marginLeft="8dp"
+                            app:tint="@color/colorIconTint" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            app:srcCompat="@drawable/ic_time"
+                            android:visibility="visible"
+                            app:tint="@color/colorIconTint" />
+
+                        <TextView
+                            android:id="@+id/itemTimeAgo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="just now"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                            android:textColor="@color/colorSubTitle"
+                            android:textStyle="normal"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/itemMenuButton"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:clickable="true"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_popup_menu"
+                        app:tint="@color/colorIconTint" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <github.ankushsachdeva.emojicon.EmojiconTextView
+                    emojicon:emojiconSize="24dp"
+                    android:fontFamily="sans-serif-light"
+                    android:linksClickable="true"
+                    android:autoLink="web"
+                    android:textColorLink="#5BCFF2"
+                    android:textColor="@color/colorSubTitle"
+                    android:textSize="16dp"
+                    android:id="@+id/itemDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Content"
+                    android:padding="@dimen/spacing_middle" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

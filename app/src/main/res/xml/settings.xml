@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:key="settings_preference_screen" >
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:key="header_general"
+        app:title="@string/settings_header_general" >
+
+        <CheckBoxPreference
+            app:allowDividerBelow="true"
+            app:iconSpaceReserved="false"
+            app:key="allowComments"
+            app:title="@string/settings_allow_comments" />
+
+        <CheckBoxPreference
+            app:allowDividerAbove="true"
+            app:allowDividerBelow="true"
+            app:iconSpaceReserved="false"
+            app:key="allowGalleryComments"
+            app:title="@string/settings_allow_comments_to_gallery_items" />
+
+        <CheckBoxPreference
+            app:allowDividerAbove="true"
+            app:allowDividerBelow="true"
+            app:iconSpaceReserved="false"
+            app:key="allowMessages"
+            app:title="@string/settings_allow_messages"
+            app:summary="@string/settings_allow_messages_summary" />
+
+        <SwitchPreference
+            app:allowDividerAbove="true"
+            app:allowDividerBelow="true"
+            app:iconSpaceReserved="false"
+            app:key="nightThemeSwitch"
+            app:title="@string/settings_night_mode_label"
+            app:summary="@string/settings_night_mode_summary" />
+
+        <Preference
+            app:allowDividerAbove="true"
+            app:allowDividerBelow="true"
+            app:iconSpaceReserved="false"
+            app:key="settings_push_notifications"
+            app:title="@string/settings_notifications" />
+
+        <Preference
+            app:allowDividerAbove="true"
+            app:allowDividerBelow="true"
+            app:iconSpaceReserved="false"
+            app:key="settings_privacy"
+            app:title="@string/settings_privacy" />
+
+        <Preference
+            app:allowDividerAbove="true"
+            app:allowDividerBelow="true"
+            app:iconSpaceReserved="false"
+            app:key="settings_change_password"
+            app:title="@string/settings_change_password"
+            app:enabled="true"
+            app:summary="" />
+
+        <Preference
+            app:allowDividerAbove="true"
+            app:allowDividerBelow="true"
+            app:iconSpaceReserved="false"
+            app:key="settings_deactivate_account"
+            app:title="@string/settings_deactivate_account"
+            app:enabled="true"
+            app:summary="" />
+
+        <Preference
+            app:allowDividerAbove="true"
+            app:allowDividerBelow="true"
+            app:iconSpaceReserved="false"
+            app:key="settings_referrals_list"
+            app:title="@string/settings_view_referrals_list" />
+
+        <Preference
+            app:allowDividerAbove="true"
+            app:allowDividerBelow="true"
+            app:iconSpaceReserved="false"
+            app:key="settings_recently_deleted"
+            app:title="@string/settings_view_recently_deleted"
+            app:summary="@string/settings_view_recently_deleted_summary" />
+
+        <Preference
+            app:allowDividerAbove="true"
+            app:allowDividerBelow="true"
+            app:iconSpaceReserved="false"
+            app:key="settings_balance"
+            app:title="@string/settings_view_balance" />
+
+        <Preference
+            app:allowDividerAbove="true"
+            app:allowDividerBelow="true"
+            app:iconSpaceReserved="false"
+            app:key="settings_balance_history"
+            app:title="@string/settings_view_balance_history" />
+
+        <Preference
+            app:allowDividerAbove="true"
+            app:allowDividerBelow="true"
+            app:iconSpaceReserved="false"
+            app:key="settings_blocked_list"
+            app:title="@string/settings_view_blocked_list" />
+
+        <Preference
+            app:allowDividerAbove="true"
+            app:allowDividerBelow="true"
+            app:iconSpaceReserved="false"
+            app:key="settings_services"
+            app:title="@string/settings_services"
+            app:summary="@string/settings_services_summary" />
+
+        <Preference
+            app:allowDividerAbove="true"
+            app:allowDividerBelow="true"
+            app:iconSpaceReserved="false"
+            app:key="settings_otp_verification"
+            app:title="@string/settings_view_otp_verification"
+            app:summary="@string/settings_view_otp_verification_summary" />
+
+        <Preference
+            app:allowDividerAbove="true"
+            app:allowDividerBelow="true"
+            app:iconSpaceReserved="false"
+            app:key="settings_language"
+            app:title="@string/settings_language_label"
+            app:summary="@string/settings_language_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:key="header_about"
+        app:title="@string/settings_header_about">
+
+        <Preference
+            app:allowDividerBelow="true"
+            app:iconSpaceReserved="false"
+            app:key="settings_terms"
+            app:title="@string/settings_terms"
+            app:summary="" />
+
+        <Preference
+            app:allowDividerAbove="true"
+            app:allowDividerBelow="true"
+            app:iconSpaceReserved="false"
+            app:key="settings_thanks"
+            app:title="@string/settings_thanks"
+            app:summary="" />
+
+        <Preference
+            app:allowDividerAbove="true"
+            app:allowDividerBelow="true"
+            app:iconSpaceReserved="false"
+            app:key="settings_version"
+            app:title="@string/settings_version"
+            app:summary="@string/settings_copyright_info" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:key="header_others"
+        app:title="@string/settings_header_others">
+
+        <Preference
+            app:allowDividerBelow="true"
+            app:iconSpaceReserved="false"
+            app:key="settings_logout"
+            app:title="@string/settings_logout"
+            app:enabled="true"
+            app:summary="" />
+
+        <Preference
+            app:allowDividerAbove="true"
+            app:allowDividerBelow="true"
+            app:iconSpaceReserved="false"
+            app:key="settings_contact_us"
+            app:title="@string/settings_contact_us"
+            app:summary="@string/settings_contact_us_summary" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
