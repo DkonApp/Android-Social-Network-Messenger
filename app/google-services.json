@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "722093829050",
+    "project_id": "dkont-9f30d",
+    "storage_bucket": "dkont-9f30d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722093829050:android:b7b35c49d921043ab40b83",
+        "android_client_info": {
+          "package_name": "dkon.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPzJRld5QIYArCG_w66l0NXc1JsVgpCwE"
+        },
+        {
+          "current_key": "AIzaSyCPprGWqo3ULCmtPOR-y-U-wm52oXOSiS0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722093829050:android:f4cf0f22cbaf7847b40b83",
+        "android_client_info": {
+          "package_name": "id.dkon.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPzJRld5QIYArCG_w66l0NXc1JsVgpCwE"
+        },
+        {
+          "current_key": "AIzaSyCPprGWqo3ULCmtPOR-y-U-wm52oXOSiS0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
